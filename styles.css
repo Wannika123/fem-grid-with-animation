@@ -64,6 +64,7 @@ main {
 
 .daniel {
     background-color: var(--Moderate-violet);
+    position: relative;
 }
 
 .jonathan {
@@ -93,6 +94,17 @@ main {
     color: var(--Light-grayish-blue);
 }
 
+.daniel .decoration-img {
+    position: absolute;
+    top: 0;
+    right: 24px;
+}
+
+.daniel .main-text {
+    position: relative;
+    z-index: 3;
+}
+
 @media (min-width: 75rem) {
     .grid-child:hover {
         cursor: pointer;
@@ -113,16 +125,8 @@ main {
     .kira:hover {
         transform: translateX(8px);
     }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0.5;
-        scale: 0.5;
-    }
-    100% {
-        opacity: 1;
-        scale: 1;
+    .daniel .decoration-img {
+        right: 80px;
     }
 }
 
@@ -277,7 +281,6 @@ footer {
 
 @media (min-width: 75rem) {
     .grid-child {
-        animation-fill-mode: forwards;
         animation-timing-function: linear;
     }
     .daniel {
