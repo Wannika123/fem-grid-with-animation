@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    min-height: 98vh;
+    min-height: 100vh;
     display: grid;
     place-items: center;
 }
@@ -181,7 +181,7 @@ footer {
         margin-top: 0;
     }
     footer {
-        margin-top: 0;
+        margin-top: -14px;
     }
 }
 
